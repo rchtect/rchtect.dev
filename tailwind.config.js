@@ -15,7 +15,7 @@ export default {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],
           // in case you want to change bg color
           "base-100": "#f0e7db",
-          primary: "#d926a9",
+          primary: "#269ad9",
           secondary: "#641ae6",
         },
       },

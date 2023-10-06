@@ -1,5 +1,7 @@
 <template>
-  <div class="navbar bg-white bg-opacity-10 backdrop-blur-sm max-h-[20px] shadow-sm">
+  <div
+    class="navbar bg-white bg-opacity-10 backdrop-blur-sm shadow-sm"
+  >
     <div class="navbar-start">
       <div class="dropdown mobile">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -22,17 +24,36 @@
           tabindex="0"
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
-          <li><a href="#" class="text-lg hover:bg-white hover:bg-opacity-20">Projects</a></li>
-          <li><a href="#" class="text-lg hover:bg-white hover:bg-opacity-20">About</a></li>
-          <li><a href="#" class="text-lg hover:bg-white hover:bg-opacity-20">Contact</a></li>
+          <li>
+            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
+              >About</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
       <div class="hidden lg:flex">
-        <h1 class="text-xl font-bold hover:text-primary" v-text="Author"></h1>
+        <nuxt-link to="/"
+          ><a
+            class="text-xl font-bold hover:text-primary hover:cursor-pointer"
+            v-text="Author"
+          ></a
+        ></nuxt-link>
       </div>
     </div>
     <div class="lg:hidden navbar-center">
-      <h1 class="text-xl font-bold" v-text="Author"></h1>
+      <nuxt-link to="/"
+        ><a class="text-xl font-bold" v-text="Author"></a
+      ></nuxt-link>
     </div>
     <div class="navbar-center hidden lg:flex lg:justify-items">
       <ul class="menu menu-horizontal px-1">
@@ -48,7 +69,7 @@
       </ul>
     </div>
     <div class="navbar-end">
-      <ThemeButton />
+      <ThemeButton/>
     </div>
   </div>
 </template>

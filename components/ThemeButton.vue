@@ -1,7 +1,7 @@
 <template>
   <button
     v-if="$colorMode.preference"
-    class="btn glass mr-1 mt-1 p-2 hover:bg-primary hover:bg-opacity-20"
+    class="btn glass p-2 hover:bg-primary hover:bg-opacity-20"
     @click="
       $colorMode.preference =
         $colorMode.preference === 'light' ? 'dark' : 'light'
