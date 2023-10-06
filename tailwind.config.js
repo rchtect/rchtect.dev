@@ -17,6 +17,7 @@ export default {
           "base-100": "#f0e7db",
           primary: "#269ad9",
           secondary: "#641ae6",
+          "base-content": "#313131",
         },
       },
     ],

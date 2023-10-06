@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="navbar bg-white bg-opacity-10 backdrop-blur-sm shadow-sm"
-  >
+  <div class="navbar bg-white bg-opacity-10 backdrop-blur-sm shadow-sm">
     <div class="navbar-start">
       <div class="dropdown mobile">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -25,18 +23,24 @@
           class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
-              >Projects</a
+            <nuxt-link to="/projects" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+              ><a class="text-lg"
+                >Projects</a
+              ></nuxt-link
             >
           </li>
           <li>
-            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
-              >About</a
+            <nuxt-link to="/about" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+              ><a class="text-lg"
+                >About</a
+              ></nuxt-link
             >
           </li>
           <li>
-            <a href="#" class="text-lg hover:bg-white hover:bg-opacity-20"
-              >Contact</a
+            <nuxt-link to="/contact" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+              ><a class="text-lg"
+                >Contact</a
+              ></nuxt-link
             >
           </li>
         </ul>
@@ -44,32 +48,42 @@
       <div class="hidden lg:flex">
         <nuxt-link to="/"
           ><a
-            class="text-xl font-bold hover:text-primary hover:cursor-pointer"
+            class="text-lg font-bold hover:text-primary hover:cursor-pointer"
             v-text="Author"
           ></a
         ></nuxt-link>
       </div>
     </div>
     <div class="lg:hidden navbar-center">
-      <nuxt-link to="/"
-        ><a class="text-xl font-bold" v-text="Author"></a
-      ></nuxt-link>
+      <nuxt-link to="/"><a class="text-xl" v-text="Author"></a></nuxt-link>
     </div>
     <div class="navbar-center hidden lg:flex lg:justify-items">
       <ul class="menu menu-horizontal px-1">
         <li class="mx-2">
-          <a href="#" class="hover:text-primary hover:bg-base-200">Projects</a>
+          <nuxt-link to="/projects" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+            ><a
+              >Projects</a
+            ></nuxt-link
+          >
         </li>
         <li class="mx-2">
-          <a href="#" class="hover:text-primary hover:bg-base-200">About</a>
+          <nuxt-link to="/about" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+            ><a
+              >About</a
+            ></nuxt-link
+          >
         </li>
         <li class="mx-2">
-          <a href="#" class="hover:text-primary hover:bg-base-200">Contact</a>
+          <nuxt-link to="/contact" class="hover:bg-white hover:bg-opacity-20 hover:text-primary"
+            ><a
+              >Contact</a
+            ></nuxt-link
+          >
         </li>
       </ul>
     </div>
     <div class="navbar-end">
-      <ThemeButton/>
+      <ThemeButton />
     </div>
   </div>
 </template>
