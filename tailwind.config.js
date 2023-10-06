@@ -10,6 +10,7 @@ export default {
           "base-100": "#000000",
           primary: "#641ae6",
           secondary: "#d926a9",
+          "base-content": "#d6d6d6",
         },
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=light]"],

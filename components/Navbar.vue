@@ -2,7 +2,7 @@
   <div class="navbar bg-white bg-opacity-10 backdrop-blur-sm shadow-sm">
     <div class="navbar-start">
       <div class="dropdown mobile">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <label tabindex="0" class="btn btn-ghost lg:hidden" onclick="this.parentElement.classList.toggle('dropdown-open');document.activeElement.blur()">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-5 w-5"
